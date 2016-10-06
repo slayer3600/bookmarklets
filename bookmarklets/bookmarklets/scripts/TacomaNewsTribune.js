@@ -31,8 +31,8 @@
                 return s;
             }
 
-            $('syncronexOverlay').hide();
-            $('syncronexOverlayContent').hide();
+            $('#syncronexOverlay').hide();
+            $('#syncronexOverlayContent').hide();
 
         })();
     }
