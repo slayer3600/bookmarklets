@@ -30,7 +30,10 @@
                 }
                 return s;
             }
-            alert('Hello!');
+
+            $('syncronexOverlay').hide();
+            $('syncronexOverlayContent').hide();
+
         })();
     }
 

@@ -1,13 +1,11 @@
-﻿javascript: (function () { s = document.createElement('script'); s.type = 'text/javascript'; s.src = 'https://raw.githubusercontent.com/slayer3600/bookmarklets/master/bookmarklets/bookmarklets/scripts/TacomaNewsTribune.js?v=' + parseInt(Math.random() * 99999999); document.body.appendChild(s); })();
+﻿javascript: (function () { if (window.myBookmarklet !== undefined) { myBookmarklet(); } else { document.body.appendChild(document.createElement('script')).src = 'https://rawgit.com/slayer3600/bookmarklets/master/bookmarklets/bookmarklets/scripts/TacomaNewsTribune.js?v=' + new Date().getTime(); } })();
+javascript: (function () { if (window.myBookmarklet !== undefined) { myBookmarklet(); } else { document.body.appendChild(document.createElement('script')).src = 'https://cdn.rawgit.com/slayer3600/bookmarklets/master/bookmarklets/bookmarklets/scripts/TacomaNewsTribune.js?v=' + new Date().getTime(); } })();
 
-javascript: (function () { if (window.myBookmarklet !== undefined) { myBookmarklet(); } else { document.body.appendChild(document.createElement('script')).src = 'http://iamnotagoodartist.com/stuff/wikiframe2.js?'; } })();
-
-javascript:(function(){if(window.myBookmarklet !== undefined){myBookmarklet();}else{document.body.appendChild(document.createElement('script')).src='https://raw.githubusercontent.com/slayer3600/bookmarklets/master/bookmarklets/bookmarklets/scripts/TacomaNewsTribune.js??'+new Date().getTime();}})();
 
 (function () {
 
     // the minimum version of jQuery we want
-    var v = "1.3.2";
+    var v = "2.2.4";
 
     // check for jQuery. if it exists, verify it's not too old.
     if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
