@@ -19,17 +19,6 @@
 
     function initMyBookmarklet() {
         (window.myBookmarklet = function () {
-            function getSelText() {
-                var s = '';
-                if (window.getSelection) {
-                    s = window.getSelection();
-                } else if (document.getSelection) {
-                    s = document.getSelection();
-                } else if (document.selection) {
-                    s = document.selection.createRange().text;
-                }
-                return s;
-            }
 
             $('#syncronexOverlay').hide();
             $('#syncronexOverlayContent').hide();
